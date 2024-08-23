@@ -1,0 +1,86 @@
+{
+  "name": "olex",
+  "version": "0.1.0",
+  "description": "俺流のフレキシブルCSSフレームワーク",
+  "license": "MIT",
+  "author": "Shibata Hironori",
+  "keywords": [
+    "CSS",
+    "CSS Framework"
+  ],
+  "scripts": {
+    "build": "tsup-node",
+    "dev": "tsup-node --env.NODE_ENV development --watch",
+    "test": "vitest"
+  },
+  "exports": {
+    ".": {
+      "style": "./index.css",
+      "types": "./dist/index.d.mts",
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs"
+    },
+    "./package.json": "./package.json",
+    "./index.css": "./index.css",
+    "./index": "./index.css",
+    "./theme.css": "./theme.css",
+    "./theme": "./theme.css",
+    "./variables.css": "./variables.css",
+    "./variables": "./variables.css",
+    "./oreset.css": "./oreset.css",
+    "./oreset": "./oreset.css",
+    "./layouts.css": "./layouts.css",
+    "./layouts": "./layouts.css",
+    "./utilities.css": "./utilities.css",
+    "./utilities": "./utilities.css"
+  },
+  "publishConfig": {
+    "provenance": true,
+    "access": "public",
+    "exports": {
+      ".": {
+        "types": "./dist/index.d.mts",
+        "style": "./index.css",
+        "require": "./dist/index.js",
+        "import": "./dist/index.mjs"
+      },
+      "./package.json": "./package.json",
+      "./index.css": "./index.css",
+      "./index": "./index.css",
+      "./theme.css": "./theme.css",
+      "./theme": "./theme.css",
+      "./variables.css": "./variables.css",
+      "./variables": "./variables.css",
+      "./oreset.css": "./oreset.css",
+      "./oreset": "./oreset.css",
+      "./layouts.css": "./layouts.css",
+      "./layouts": "./layouts.css",
+      "./utilities.css": "./utilities.css",
+      "./utilities": "./utilities.css"
+    }
+  },
+  "style": "index.css",
+  "files": [
+    "dist",
+    "index.css",
+    "oreset.css",
+    "variables.css",
+    "layouts.css",
+    "utilities.css"
+  ],
+  "devDependencies": {
+    "@types/node": "^22.2.0",
+    "tsup": "^8.2.4",
+    "typescript": "^5.5.4",
+    "vitest": "^2.0.5"
+  },
+  "dependencies": {
+    "chokidar": "^3.6.0",
+    "fast-glob": "^3.3.2",
+    "fs-extra": "^11.2.0",
+    "htmlparser2": "^9.1.0",
+    "lightningcss": "^1.26.0",
+    "postcss": "^8.4.41",
+    "prettier": "^3.3.3"
+  }
+}

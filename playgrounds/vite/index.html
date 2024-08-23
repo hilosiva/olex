@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Olex</title>
+    <link rel="stylesheet" href="/src/index.css" />
+    <script type="module" src="/src/main.ts"></script>
+  </head>
+  <body>
+    <div data-container data-size="max-inline-small">
+      <div data-flex data-place="lg:end">
+        <p>罫線のテスト</p>
+        <p>罫線のテスト</p>
+      </div>
+      <div data-grid="cols-3" data-gap="small">
+        <p>罫線のテスト1</p>
+        <p data-order="-2">罫線のテスト2</p>
+        <p>罫線のテスト3</p>
+      </div>
+
+      <div data-m="top-2xsmall">
+        <p data-text="tb">罫線のテスト</p>
+        <p data-visually-hidden>罫線のテストはどれ</p>
+      </div>
+      <div data-m="top-xlarge">
+        <h1 data-text="keep">Olex<wbr />俺流のフレームワーク</h1>
+      </div>
+      <div data-m="top-large">
+        <div data-grid="cols-2">
+          <div>
+            <p data-text="balance line-loose letter-wider" data-font="700 pkna gothic">
+              ここにテキストを配置すると、どうなる？ここにテキストを配置するとどうなる？ここにテキストを配置するとどうなる？
+            </p>
+          </div>
+          <div>
+            <p data-text="center balance line-[2rlh]" data-font="fluid-[12,40]">This is a pen. I'm pen too. Tmorrow never knows</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <h2 data-text="rl balance">見出しは2行になる</h2>
+    <div data-grid data-place="center" data-size="block-start-[500px]">
+      <p data-bg="main">せんた</p>
+    </div>
+
+    <div data-size="inline-[20vi]" data-aspect="square" data-bg="main"></div>
+
+    <div data-position="fixed" data-inset="small" data-z-index="[-5]">position</div>
+
+    <div data-p="inline-medium" data-m="2 top-3 inline-4">
+      <div data-m="top-small">
+        <div data-grid="cols-3">
+          <div data-grid-item="rows-subgrid row-3">
+            <p data-grid-item>サブグリ</p>
+            <p>サブグリ<br />サブグリ<br />サブグリ<br />グリグリ</p>
+            <p>サブグリ</p>
+          </div>
+          <div data-grid-item="rows-subgrid row-3">
+            <p>サブグリ</p>
+            <p>サブグリ</p>
+            <p>サブグリ</p>
+          </div>
+          <div data-grid-item="rows-subgrid row-3">
+            <p>サブグリ</p>
+            <p>サブグリ</p>
+            <p>サブグリ</p>
+          </div>
+        </div>
+        <div class="grid">
+          <div class="grid__item">
+            <p>サブグリ</p>
+            <p>サブグリ<br />サブグリ<br />サブグリ<br />グリグリ</p>
+            <p>サブグリ</p>
+          </div>
+          <div class="grid__item">
+            <p>サブグリ</p>
+            <p>サブグリ</p>
+            <p>サブグリ</p>
+          </div>
+          <div class="grid__item">
+            <p>サブグリ</p>
+            <p>サブグリ</p>
+            <p>サブグリ</p>
+          </div>
+        </div>
+      </div>
+      <div data-m="top-small">
+        <h3>Heading3<br />これが見出し</h3>
+        <div data-space="y-2">
+          <p>罫線のテスト</p>
+          <p>罫線のテスト</p>
+          <p>罫線のテスト</p>
+          <p>罫線のテスト</p>
+        </div>
+      </div>
+      <div data-m="top-small">
+        <h4>Heading4<br />これが見出し</h4>
+        <p>罫線のテスト</p>
+        <p>罫線のテスト</p>
+      </div>
+      <div data-m="top-small">
+        <h5>Heading5<br />これが見出し</h5>
+        <p>罫線のテスト</p>
+        <p>罫線のテスト</p>
+      </div>
+      <div data-m="top-large">
+        <h6>Heading6<br />これが見出し</h6>
+        <p>罫線のテスト</p>
+        <p>罫線のテスト</p>
+      </div>
+      <div data-m="top-small">
+        <p class="small">スモール</p>
+        <p>罫線のテスト</p>
+        <p>罫線のテスト</p>
+      </div>
+    </div>
+
+    <!-- <header data-container="4xlarge fluid-[20,40,500,1000] lg:none">
+      <div data-flex="nowrap inline" data-m="top-small">
+        <h1>Hello</h1>
+      </div>
+    </header>
+    <main>
+      <div data-container="e-4xlarge s-[10vi] xl:e-fluid-[24,40]" style="background-color: #333">
+        <div data-grid="cols-3 " data-gap="fluid-[20,40]" data-m="y-fluid-[20,40]">
+          <div>test</div>
+          <div>test</div>
+          <div>test</div>
+          <div>test</div>
+        </div>
+      </div>
+      <div data-container="s-[20vi]">
+        <div data-grid="cols-3">
+          <div>test</div>
+          <div>test</div>
+          <div>test</div>
+          <div>test</div>
+        </div>
+        <div style="background-color: aqua" data-over>
+          <p>てすと</p>
+        </div>
+      </div>
+    </main> -->
+  </body>
+</html>

@@ -1,0 +1,35 @@
+{
+  "name": "@olex/postcss",
+  "version": "0.1.0",
+  "description": "俺流のフレキシブルCSSフレームワーク",
+  "license": "MIT",
+  "author": "Shibata Hironori",
+  "keywords": [
+    "PostCSS",
+    "CSS",
+    "CSS Framework"
+  ],
+  "scripts": {
+    "build": "tsup-node",
+    "dev": "pnpm run build -- --watch"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "dependencies": {
+    "olex": "workspace:^",
+    "postcss-import": "^16.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.2.0",
+    "@types/postcss-import": "^14.0.3",
+    "postcss": "^8.4.41",
+    "tsup": "^8.2.4",
+    "typescript": "^5.5.4",
+    "vitest": "^2.0.5"
+  }
+}
