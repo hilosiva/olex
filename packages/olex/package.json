@@ -42,7 +42,7 @@
     "./utilities": "./utilities.css"
   },
   "publishConfig": {
-    "provenance": true,
+    "provenance": false,
     "access": "public",
     "exports": {
       ".": {
