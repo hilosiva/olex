@@ -1,3 +1,3 @@
 module.exports = {
-  plugins: [require("@olex/postcss")],
+  // plugins: [require("postcss-olex")],
 };

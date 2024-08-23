@@ -107,10 +107,10 @@ importers:
 
   playgrounds/vite:
     dependencies:
-      '@olex/postcss':
+      postcss-olex:
         specifier: workspace:^
         version: link:../../packages/@olex-postcss
-      '@olex/vite':
+      vite-plugin-olex:
         specifier: workspace:^
         version: link:../../packages/@olex-vite
     devDependencies:

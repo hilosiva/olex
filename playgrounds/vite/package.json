@@ -9,8 +9,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@olex/vite": "workspace:^",
-    "@olex/postcss": "workspace:^"
+    "vite-plugin-olex": "workspace:^",
+    "postcss-olex": "workspace:^"
   },
   "devDependencies": {
     "postcss": "^8.4.41",

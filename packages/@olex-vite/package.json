@@ -1,5 +1,5 @@
 {
-  "name": "@olex/vite",
+  "name": "vite-plugin-olex",
   "version": "0.1.0",
   "description": "Ore no Flexible CSS framework",
   "license": "MIT",
