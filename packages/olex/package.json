@@ -70,6 +70,7 @@
   "files": [
     "dist",
     "index.css",
+    "theme.css",
     "oreset.css",
     "variables.css",
     "layouts.css",
