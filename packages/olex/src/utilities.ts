@@ -18,6 +18,8 @@ const replaceMap: Record<string, string> = {
   "2xl": "2xlarge",
   "3xl": "3xlarge",
   "4xl": "4xlarge",
+  "5xl": "5xlarge",
+  "6xl": "6xlarge",
 };
 
 export const initUtilities = async (root: Root) => {

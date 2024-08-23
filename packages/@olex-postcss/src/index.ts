@@ -5,8 +5,6 @@ import { compiler, searchFiles, parseFiles } from "olex";
 
 interface PluginOptions {
   // オプションの型を定義
-  minViewPort?: number;
-  maxViewPort?: number;
   [key: string]: any;
 }
 

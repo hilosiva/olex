@@ -1,13 +1,20 @@
 {
   "name": "olex",
   "version": "0.1.0",
-  "description": "俺流のフレキシブルCSSフレームワーク",
+  "description": "Ore no Flexible CSS framework",
   "license": "MIT",
   "author": "Shibata Hironori",
   "keywords": [
     "CSS",
     "CSS Framework"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hilosiva/olex.git",
+    "directory": "packages/olex"
+  },
+  "bugs": "https://github.com/hilosiva/olex/issues",
+  "homepage": "https://github.com/hilosiva/olex",
   "scripts": {
     "build": "tsup-node",
     "dev": "tsup-node --env.NODE_ENV development --watch",

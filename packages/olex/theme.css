@@ -64,7 +64,7 @@
 
   /* Line Height */
   --leading-base: 4;
-  --leading-3xs: calc(var(--leading-base) * 38 * var(--to-rem));
+  --leading-3xs: calc(var(--leading-base) * 2 * var(--to-rem));
   --leading-2xs: calc(var(--leading-base) * 3 * var(--to-rem));
   --leading-xs: calc(var(--leading-base) * 4 * var(--to-rem));
   --leading-sm: calc(var(--leading-base) * 5 * var(--to-rem));

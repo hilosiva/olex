@@ -45,40 +45,31 @@ body {
   }
 }
 
-h1 {
-  font-size: var(--font-6xl);
-  /* line-height: 6.5rlh; */
-  line-height: var(--leading-3xs);
-
-  /* line-height: 1.21875; */
-  /* line-height: var(--leading-4xl); */
-}
-
 h2 {
-  font-size: var(--font-3xl);
+  /* font-size: var(--font-3xl);
   margin-block-start: 2rlh;
-  line-height: 3.5rlh;
+  line-height: 3.5rlh; */
   /* line-height: 1.3125; */
   /* line-height: var(--line-height-3xl); */
 }
 h3 {
-  font-size: var(--font-2xl);
-  line-height: 2.5rlh;
+  /* font-size: var(--font-2xl);
+  line-height: 2.5rlh; */
   /* line-height: 1.25; */
 }
 h4 {
-  font-size: var(--font-xl);
-  line-height: 1.5rlh;
+  /* font-size: var(--font-xl);
+  line-height: 1.5rlh; */
   /* line-height: 1.25; */
 }
 h5 {
-  font-size: var(--font-lg);
-  line-height: 1rlh;
+  /* font-size: var(--font-lg); */
+  /* line-height: 1rlh; */
   /* line-height: 1.25; */
 }
 h6 {
-  font-size: var(--font-md);
-  line-height: 1rlh;
+  /* font-size: var(--font-md);
+  line-height: 1rlh; */
   /* line-height: 1.25; */
 }
 

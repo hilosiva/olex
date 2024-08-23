@@ -8,8 +8,48 @@
     <script type="module" src="/src/main.ts"></script>
   </head>
   <body>
-    <div data-container data-size="max-inline-small">
-      <div data-flex data-place="lg:end">
+    <header>
+      <div data-container>
+        <nav data-p="block-small">
+          <ul data-flex data-place="center" data-gap="small">
+            <li>リスト1</li>
+            <li>リスト2</li>
+            <li>リスト3</li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div data-container>
+        <div data-m="block-xlarge">
+          <h1 data-text="keep line-tight pkna" data-font="6xlarge">Olex<wbr />俺流のフレームワーク</h1>
+        </div>
+        <section>
+          <h2 data-font="sans 5xlarge 500" data-text="letter-wide line-4xlarge">Overview</h2>
+          <div data-m="block-start-medium">
+            <div data-grid="cols-3" data-gap="col-medium">
+              <div class="" data-grid-item="rows-subgrid row-3" data-gap="row-2xsmall">
+                <h3 data-font="sans 2xlarge" data-text="line-tight">Heading3</h3>
+                <figure data-aspect="v-golden" data-size="" data-bg="main" data-order="first"></figure>
+                <p data-text="balance letter-wider pkna">ここにテキストを配置すると、どうなる？ここにテキストを配置するとどうなる？ここにテキストを配置するとどうなる？</p>
+              </div>
+              <div class="" data-grid-item="rows-subgrid row-3" data-gap="row-2xsmall">
+                <h3 data-font="sans 2xlarge" data-text="line-tight">Heading3</h3>
+                <figure data-aspect="v-golden" data-size="" data-bg="main" data-order="first"></figure>
+                <p data-text="balance letter-wider pkna">ここにテキストを配置すると、どうなる？ここにテキストを配置するとどうなる？ここにテキストを配置するとどうなる？</p>
+              </div>
+              <div class="" data-grid-item="rows-subgrid row-3" data-gap="row-2xsmall">
+                <h3 data-font="sans 2xlarge" data-text="line-tight">Heading3</h3>
+                <figure data-aspect="v-golden" data-size="" data-bg="main" data-order="first"></figure>
+                <p data-text="balance letter-wider pkna">ここにテキストを配置すると、どうなる？ここにテキストを配置するとどうなる？ここにテキストを配置するとどうなる？</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <div data-container>
+      <div data-flex data-place="lg:end" data-gap="small">
         <p>罫線のテスト</p>
         <p>罫線のテスト</p>
       </div>
@@ -23,9 +63,7 @@
         <p data-text="tb">罫線のテスト</p>
         <p data-visually-hidden>罫線のテストはどれ</p>
       </div>
-      <div data-m="top-xlarge">
-        <h1 data-text="keep">Olex<wbr />俺流のフレームワーク</h1>
-      </div>
+
       <div data-m="top-large">
         <div data-grid="cols-2">
           <div>
@@ -34,7 +72,7 @@
             </p>
           </div>
           <div>
-            <p data-text="center balance line-[2rlh]" data-font="fluid-[12,40]">This is a pen. I'm pen too. Tmorrow never knows</p>
+            <p data-text="center balance line-loose" data-font="fluid-[12,40]">This is a pen. I'm pen too. Tmorrow never knows</p>
           </div>
         </div>
       </div>

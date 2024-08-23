@@ -3,5 +3,5 @@ import olex from "@olex/vite";
 import { defineConfig } from "vite";
 
 export default defineConfig({
-  plugins: [olex()],
+  // plugins: [olex()],
 });
