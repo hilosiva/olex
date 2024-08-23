@@ -1,6 +1,7 @@
 import config from "./config";
 import { prefix, breakpoints } from "./theme";
 import postcss, { AtRule, Root } from "postcss";
+import { Features, transform } from "lightningcss";
 import { generateCss } from "./generator";
 import { parseHtml, getHtmlFiles, readHtmlFiles, attibutesCache } from "./parser";
 import prettier from "prettier";
@@ -85,5 +86,26 @@ export async function compiler(css: string, from: string, to?: string) {
     }
   });
 
-  return await prettier.format(root.toString(), { parser: "css" });
+  return await prettier.format(optimize(root.toString()), { parser: "css" });
+}
+
+function optimize(input: string, { file = "input.css", minify = false }: { file?: string; minify?: boolean } = {}) {
+  return transform({
+    filename: file,
+    code: Buffer.from(input),
+    minify,
+    sourceMap: false,
+    drafts: {
+      customMedia: true,
+    },
+    nonStandard: {
+      deepSelectorCombinator: true,
+    },
+    include: Features.Nesting,
+    exclude: Features.LogicalProperties,
+    targets: {
+      safari: (16 << 16) | (4 << 8),
+    },
+    errorRecovery: true,
+  }).code.toString();
 }

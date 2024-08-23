@@ -82,7 +82,6 @@
     "vitest": "^2.0.5"
   },
   "dependencies": {
-    "chokidar": "^3.6.0",
     "fast-glob": "^3.3.2",
     "fs-extra": "^11.2.0",
     "htmlparser2": "^9.1.0",

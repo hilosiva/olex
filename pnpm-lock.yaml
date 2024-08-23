@@ -30,44 +30,6 @@ importers:
         specifier: ^2.0.5
         version: 2.0.5(@types/node@22.2.0)(lightningcss@1.26.0)
 
-  packages/@olex-cdn:
-    dependencies:
-      olex:
-        specifier: workspace:^
-        version: link:../olex
-    devDependencies:
-      '@types/node':
-        specifier: ^22.2.0
-        version: 22.2.0
-      tsup:
-        specifier: ^8.2.4
-        version: 8.2.4(postcss@8.4.41)(typescript@5.5.4)
-      typescript:
-        specifier: ^5.5.4
-        version: 5.5.4
-      vitest:
-        specifier: ^2.0.5
-        version: 2.0.5(@types/node@22.2.0)(lightningcss@1.26.0)
-
-  packages/@olex-cli:
-    dependencies:
-      olex:
-        specifier: workspace:^
-        version: link:../olex
-    devDependencies:
-      '@types/node':
-        specifier: ^22.2.0
-        version: 22.2.0
-      tsup:
-        specifier: ^8.2.4
-        version: 8.2.4(postcss@8.4.41)(typescript@5.5.4)
-      typescript:
-        specifier: ^5.5.4
-        version: 5.5.4
-      vitest:
-        specifier: ^2.0.5
-        version: 2.0.5(@types/node@22.2.0)(lightningcss@1.26.0)
-
   packages/@olex-postcss:
     dependencies:
       olex:
@@ -111,9 +73,6 @@ importers:
 
   packages/olex:
     dependencies:
-      chokidar:
-        specifier: ^3.6.0
-        version: 3.6.0
       fast-glob:
         specifier: ^3.3.2
         version: 3.3.2

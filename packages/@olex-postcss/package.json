@@ -20,6 +20,13 @@
     "build": "tsup-node",
     "dev": "pnpm run build -- --watch"
   },
+  "files": [
+    "dist/"
+  ],
+  "publishConfig": {
+    "provenance": true,
+    "access": "public"
+  },
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
