@@ -122,6 +122,7 @@ export class Style {
 
     if (!isAttrNameEnabled || !attrValue) {
       // 属性名がHTMLで使われていない、または、属性名のみのセレクター
+
       return isAttrNameEnabled || false;
     }
 

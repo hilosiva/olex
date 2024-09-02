@@ -103,7 +103,7 @@ export const initLayout = async (root: Root) => {
     [`--${prefix}over-start`, `calc(-1 * var(--${prefix}container-offset-start, initial))`],
     [`--${prefix}over-end`, `calc(-1 * var(--${prefix}container-offset-end, initial))`],
     ["container", "over / inline-size"],
-    [`margin-inline`, `var(--${prefix}over-start)) var(--${prefix}over-end))`],
+    [`margin-inline`, `var(--${prefix}over-start) var(--${prefix}over-end)`],
   ]);
 
   // Align
@@ -310,7 +310,7 @@ export const initLayout = async (root: Root) => {
   ]);
 
   for (const [key, value] of flexDirection) {
-    await over.setModifier(new Style(`[data-${prefix}flex~="${key}"]`, [[`flex-direction`, value]], { isMediaQuery: true }));
+    await flex.setModifier(new Style(`[data-${prefix}flex~="${key}"]`, [[`flex-direction`, value]], { isMediaQuery: true }));
   }
 
   // ====================================
