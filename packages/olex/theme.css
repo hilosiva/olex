@@ -22,7 +22,7 @@
   --to-rem: calc(1rem / var(--font-base));
   --to-rlh: calc(1 / (var(--font-base) * var(--default-leading)));
 
-  /* Design */
+  /* Design Width */
   --design-width-sm: 375;
   --design-width-md: 768;
   --design-width-lg: 1440;
