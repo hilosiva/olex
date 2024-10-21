@@ -1,5 +1,5 @@
 import path from "path";
-import { compiler, parseContents } from "olex";
+import { compiler, parseContents, searchFiles, parseFiles } from "olex";
 import type { Plugin, ResolvedConfig, ViteDevServer, Update, Rollup } from "vite";
 
 export default function olex(): Plugin[] {
@@ -114,6 +114,7 @@ export default function olex(): Plugin[] {
 
       // エントリーポイントのHTML
       transformIndexHtml(html) {
+
         // HTMLをパース
         parseContents([html]);
 
@@ -122,7 +123,16 @@ export default function olex(): Plugin[] {
       },
 
       // モジュールの更新
-      transform(code, id, options) {
+      async transform(code, id, options) {
+
+        // Astro
+        if (id.endsWith(".astro")) {
+          const files = await searchFiles();
+          await parseFiles(files);
+          updateCSS(options?.ssr ?? false);
+        }
+
+
         if (id.includes("/.vite/")) return;
 
         const ext = getExtension(id);

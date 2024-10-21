@@ -1,6 +1,6 @@
 {
   "name": "@olex/root",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "private": true,
   "scripts": {
     "build": "turbo build --filter=!./playgrounds/*",
@@ -8,6 +8,9 @@
     "vite": "pnpm run --filter=vite-playground dev",
     "vite-build": "pnpm run --filter=vite-playground build",
     "vite-preview": "pnpm run --filter=vite-playground preview",
+    "astro": "pnpm run --filter=astro-playground dev",
+    "astro-build": "pnpm run --filter=astro-playground build",
+    "astro-preview": "pnpm run --filter=astro-playground preview",
     "test": "turbo run test"
   },
   "repository": {

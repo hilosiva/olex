@@ -22,7 +22,7 @@ function fileExists(filePath: string) {
 }
 
 const defaultConfig : Config = {
-  content: ["./**/*.html"],
+  content: ["./**/*.html", "./src/**/*.astro"],
   prefix: "hl",
   theme: {
     screens: {

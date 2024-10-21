@@ -1,6 +1,6 @@
 {
   "name": "olex",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Ore no Flexible CSS framework",
   "license": "MIT",
   "author": "Shibata Hironori",
@@ -16,7 +16,7 @@
   "bugs": "https://github.com/hilosiva/olex/issues",
   "homepage": "https://github.com/hilosiva/olex",
   "scripts": {
-    "build": "tsup-node",
+    "build": "tsup-node --env.NODE_ENV production",
     "dev": "tsup-node --env.NODE_ENV development --watch",
     "test": "vitest"
   },

@@ -1,0 +1,22 @@
+{
+  "name": "astro-playground",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "vite-plugin-olex": "workspace:^",
+    "postcss-olex": "workspace:^"
+  },
+  "devDependencies": {
+    "postcss": "^8.4.41",
+    "@astrojs/check": "^0.9.4",
+    "astro": "^4.16.6",
+    "typescript": "^5.6.3"
+  }
+}

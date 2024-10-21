@@ -39,7 +39,7 @@ function olex(opts: PluginOptions = {}): AcceptedPlugin {
             type: "dir-dependency",
             plugin: "@olex/postcss",
             dir: opts.base ?? process.cwd(),
-            glob: "**/*.{html,css}", // ファイルから取得した形式に変更すること
+            glob: "**/*.{html,css,astro}", // ファイルから取得した形式に変更すること
             parent: result.opts.from,
           });
 
